@@ -2,7 +2,7 @@ import React from 'react';
 import Title from './Title';
 import planets from '../data/planets';
 import PlanetCard from './PlanetCard';
-import './SolarSystem.css';
+// import './SolarSystem.css';
 
 class SolarSystem extends React.Component {
   render() {
@@ -10,8 +10,10 @@ class SolarSystem extends React.Component {
     // data.map((x) => <Hello key={x.id}>{x}</Hello>);
     return (
       <div data-testid="solar-system" className="SolarSystem">
+
         <Title headline="Planetas" />
         <div className="planetas">
+          <hr />
           {
             pl.map((p) => {
               const n = p.name;

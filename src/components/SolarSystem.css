@@ -1,10 +1,10 @@
-.SolarSystem {
+/* .SolarSystem {
   background-color: red;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 900px;
-  height: 300px;
+  height: 100px;
 }
 
 .planetas {
@@ -16,5 +16,5 @@
 }
 
 .planetas img {
-  width: 12px
-}
+  width: 100%;
+} */

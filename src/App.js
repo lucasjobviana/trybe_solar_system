@@ -6,13 +6,11 @@ import './App.css';
 
 class App extends React.Component {
   render() {
-    // <Header />
-    // <SolarSystem />
-    // <Missions />
-
     return (
       <div className="App">
+        <Header />
         <SolarSystem />
+        <Missions />
       </div>
 
     );

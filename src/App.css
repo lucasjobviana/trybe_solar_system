@@ -8,3 +8,131 @@
   flex-direction: column;
 }
 */
+* {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  background-image: url('./images/background.png');
+}
+
+.SolarSystem {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100dvw;
+  height: 150px;
+}
+
+.planetas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.PlanetCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.PlanetCard p {
+  position: absolute;
+  top: 120%;
+}
+
+.planetas img {
+  width: 100%;
+}
+
+#imgId_Mercúrio {
+  transform: scale(0.3);
+}
+
+#imgId_Vênus {
+  transform: scale(0.6);
+}
+
+#imgId_Terra {
+  transform: scale(0.7);
+}
+
+#imgId_Marte {
+  transform: scale(0.4);
+}
+
+#imgId_Júpiter {
+  transform: scale(1.4);
+}
+
+#imgId_Saturno {
+  transform: rotate(-18deg) scale(1.5);
+}
+
+#imgId_Urano {
+  transform: scale(1.2);
+}
+
+#imgId_Netuno {
+  transform: scale(1.15);
+}
+
+img:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.missions-conteiner {
+  /* background-color: aqua; */
+  background-color: rgba(100, 100, 100, 0.2);
+  border: 5px solid black;
+  border-radius: 20px;
+  display: flex;
+  margin-top: 10%;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: auto;
+}
+
+hr {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 0px;
+  border: 1px solid #FFFFFF;
+  top: 50%;
+}
+
+
+
+
+.missions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.mission-card {
+
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 45%;
+  border: 0.1px solid white;
+  border-radius: 17px;
+  padding: 5px;
+}
