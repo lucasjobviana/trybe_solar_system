@@ -1,10 +1,7 @@
-/*
-.App {
+.Header {
+  display: block;
   text-align: center;
   background-color: black;
   background-image: url(./images/background.png);
   color: white;
-  display: flex;
-  flex-direction: column;
 }
-*/
