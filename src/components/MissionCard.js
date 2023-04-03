@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import BandeiraImg from '../images/band1.png';
 import BImg from '../images/b.png';
 import CalendarImg from '../images/calendar.png';
-import Title from './Title';
 
 class MissionCard extends React.Component {
   render() {
