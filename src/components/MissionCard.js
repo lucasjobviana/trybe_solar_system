@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import BandeiraImg from '../images/bandeira.png';
+import BandeiraImg from '../images/band1.png';
+import BImg from '../images/b.png';
+import CalendarImg from '../images/calendar.png';
+import Title from './Title';
 
 class MissionCard extends React.Component {
   render() {
@@ -8,19 +11,23 @@ class MissionCard extends React.Component {
 
     return (
       <div data-testid="mission-card" className="mission-card">
-        <p data-testid="mission-name">
-          {name}
-        </p>
-        <p data-testid="mission-year">
-          {year}
-          <img src={ BandeiraImg } alt="alternativo" />
-        </p>
-        <p data-testid="mission-country">
-          {country}
-        </p>
-        <p data-testid="mission-destination">
-          {destination}
-        </p>
+
+        <h3 style={ { textAlign: 'center' } }>{name}</h3>
+        <div>
+          <p data-testid="mission-year">
+            <img className="icone" src={ CalendarImg } alt="alternativo" />
+            {year}
+          </p>
+          <p data-testid="mission-country">
+            <img className="icone" src={ BImg } alt="alternativo" />
+            {country}
+          </p>
+          <p data-testid="mission-destination">
+            <img className="icone" src={ BandeiraImg } alt="alternativo" />
+            {destination}
+          </p>
+        </div>
+
       </div>
     );
   }
